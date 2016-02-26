@@ -1,1 +1,1 @@
-https://github.com/traug/Lab04.git
+AddHandler application/x-httpd-php .html
