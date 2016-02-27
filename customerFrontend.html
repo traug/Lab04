@@ -1,11 +1,57 @@
 <html>
 <head>
 <title>Lab04 Exercise 3</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="formChecker.js"></script>
 </head>
 <body>
 
-<table>
+<table align="center" text-align="center">
+<form name ="cart" action = "customerBackend.php" method="post" onsubmit="return validateForm()">
+<tr>
+<td>Item/Price</td>
+<td>Image</td>
+<td>Enter Quantity Below</td>
+</tr>
 
+
+<tr>
+<td>Cool Hat - $20.00</td>
+<td><img src = "images/cool.png"></td>
+<td><input type ="number" name="cool"></td>
+</tr>
+
+<tr>
+<td>Shades Hat - $35.00</td>
+<td><img src = "images/shades.png"></td>
+<td><input type ="number" name="shades"></td>
+</tr>
+
+<tr>
+<td>Boss Hat - $15.00</td>
+<td><img src = "images/boss.png"></td>
+<td><input type ="number" name="boss"></td>
+</tr>
+
+
+
+<tr><td colspan = "3">Shipping:</td></tr>
+
+<tr><td><input type="radio" name = "ship" value = "free" id="free">Free 7-Day</td></tr>
+<tr><td><input type="radio" name = "ship" value = "overnight" id="overnight">$50.00 Over Night</td></tr>
+<tr><td><input type="radio" name = "ship" value = "three day" id = "three">$5.00 Three Day</td></tr>
+
+<tr><td>Username:</td>
+<td><input type="text" name="username"></td>
+</tr>
+<tr><td>Password:</td>
+<td><input type="text" name="password"></td>
+</tr>
+<tr><td><input type="submit" name="submit" value = "Submit"></td></tr>
+<tr><td><button type="reset" value="Reset">Reset</button>
+</form>
 </table>
 
 </body>
