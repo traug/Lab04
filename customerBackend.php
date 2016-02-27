@@ -11,6 +11,9 @@ $shadesSub = 35*$shades;
 $bossSub = 15*$boss;
 $shippingSub = 0;
 
+
+echo "<script type='text/javascript'>alert('Hello, '.$username.'. Your password is: '.$password);</script>";
+
 if($shipping == "overnight")
 {
 	$shippingSub = 50;
