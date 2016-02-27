@@ -24,7 +24,7 @@ else if($shipping == "free")
 {
 	$shippingSub = 0;
 }
-else if($shipping == "three")
+else if($shipping == "three day")
 {
 	$shippingSub = 5;
 }
@@ -43,7 +43,7 @@ echo '<tr><td>Boss Hat</td><td class = specialCells>'.$boss.'</td><td class = sp
 
 echo '<tr><td>Shipping</td><td colspan = 2 class = specialCells>'.$shipping.'</td><td class = specialCells>$'.$shippingSub.'.00</td></tr>';
 
-echo '<tr><td colspan = 3>Total Cost</td><td>'.$totalCost.'</td></tr>';
+echo '<tr><td colspan = 3>Total Cost</td><td>$'.$totalCost.'.00</td></tr>';
 
 echo '</table>';
 
