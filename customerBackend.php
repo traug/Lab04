@@ -11,8 +11,9 @@ $shadesSub = 35*$shades;
 $bossSub = 15*$boss;
 $shippingSub = 0;
 
+echo '<link rel="stylesheet" type="text/css" href="style.css">';
 
-echo "<script type='text/javascript'>alert('Hello, '.$username.'. Your password is: '.$password);</script>";
+echo "<script type='text/javascript'>alert('Hello, $username. Your password is: $password');</script>";
 
 if($shipping == "overnight")
 {
@@ -31,16 +32,16 @@ else if($shipping == "three")
 
 $totalCost = $coolSub + $shadesSub + $bossSub + $shippingSub;
 
-echo '<table>';
+echo '<table class = outputForm>';
 echo '<tr><td></td><td>Quantity</td><td>Cost Per Item</td><td>Sub Total</td></tr>';
 
-echo '<tr><td>Cool Hat</td><td>'.$cool.'</td><td>$20.00</td><td>'.$coolSub.'</td></tr>';
+echo '<tr><td>Cool Hat</td><td class = specialCells>'.$cool.'</td><td class = specialCells>$20.00</td><td class = specialCells>$'.$coolSub.'.00</td></tr>';
 
-echo '<tr><td>Shades Hat</td><td>'.$shades.'</td><td>$35.00</td><td>'.$shadesSub.'</td></tr>';
+echo '<tr><td>Shades Hat</td><td class = specialCells>'.$shades.'</td><td class = specialCells>$35.00</td><td class = specialCells>$'.$shadesSub.'.00</td></tr>';
 
-echo '<tr><td>Boss Hat</td><td>'.$boss.'</td><td>$15.00</td><td>'.$bossSub.'</td></tr>';
+echo '<tr><td>Boss Hat</td><td class = specialCells>'.$boss.'</td><td class = specialCells>$15.00</td><td class = specialCells>$'.$bossSub.'.00</td></tr>';
 
-echo '<tr><td>Shipping</td><td colspan = 2>'.$shipping.'</td><td>'.$shippingSub.'</td></tr>';
+echo '<tr><td>Shipping</td><td colspan = 2 class = specialCells>'.$shipping.'</td><td class = specialCells>$'.$shippingSub.'.00</td></tr>';
 
 echo '<tr><td colspan = 3>Total Cost</td><td>'.$totalCost.'</td></tr>';
 
