@@ -25,8 +25,8 @@ td.specialCells
 table.outputForm
 {
 	background-color: lightgreen;
-	border-spacing: 5px;
-	border: 1px solid black;
+	border-spacing: 7px;
+	border: 1px solid black; 
 }
 
 td.inputForm
