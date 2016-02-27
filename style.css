@@ -1,0 +1,35 @@
+img
+{
+max-width: 100px;
+height: 75px;
+}
+
+table
+{
+	text-align: center;
+	background-color: lightblue;
+
+}
+
+table, td {
+	border: 1px solid black;
+}
+
+td.specialCells
+{
+	background-color: white;
+	
+
+}
+
+table.outputForm
+{
+	background-color: lightgreen;
+	border-spacing: 5px;
+	border: 1px solid black;
+}
+
+td.inputForm
+{
+	border: none;
+}
