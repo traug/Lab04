@@ -31,9 +31,13 @@ function validateForm() {
 	}
 
 	var username = document.forms["cart"]["username"].value;
-	if(username == null || username == "")
+
+
+	var regex = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
+
+	if(!regex.test(username))
 	{
-		alert("Username cannot be blank");
+		alert("Username must be a valid email.");
 		return false;
 	}
 
